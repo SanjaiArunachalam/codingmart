@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Search</title>
+</head>
+<body>
+    <style> 
+        input[type=text] {
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        </style>
+   
+    <form #simpleform="ngForm" (ngSubmit)="getValues(SimpleForm.value)">
+        <label>Medicine Name</label>
+        <input type="text" name="Medicine Name" >
+        <br><br>
+        <label>Compnent 1</label>
+        <input type="text"  name="Component 1" >
+        <br><br>
+        <label>Component 2</label>
+        <input type="text"  name="Component 2" >
+        <br><br>
+        <label>Component 3</label>
+        <input type="text"  name="Component 3" ">
+        <br><br>
+        <label>Component 4</label>
+        <input type="text"  name="Component 4" >
+        <br><br>
+        <button>Save</button>
+    </form>
+</body>
+</html>
